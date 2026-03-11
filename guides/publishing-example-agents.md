@@ -30,7 +30,7 @@ In the `agentlib` worktree:
 ```bash
 npm run d1:reset:local
 npm run dev:api:local
-npm run publish:sample:local 0.6.0
+npm run publish:example:local -- ../agent-examples/.worktrees/examples-catalog/examples/raul/docs-writer
 ```
 
 Then verify local persistence:
@@ -39,6 +39,12 @@ Then verify local persistence:
 npm run d1:list:local
 npm run d1:list:artifacts:local
 ```
+
+The same flow works for:
+
+- `../agent-examples/.worktrees/examples-catalog/examples/raul/code-reviewer`
+- `../agent-examples/.worktrees/examples-catalog/examples/acme/support-triager`
+- `../agent-examples/.worktrees/examples-catalog/examples/raul/docs-writer`
 
 ## Current limits
 
